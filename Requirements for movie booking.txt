@@ -14,6 +14,7 @@ REQUIREMENTS:
 5.)Movie details
 6.)Theatre list
 7.)Seat management
-8.)Payment with login id
-9.)Payment access without login id (Special feature)
-10.)Payment details
+8.)Food list
+9.)Payment with login id
+10.)Payment access without login id (Special feature)
+11.)Payment details

@@ -1,0 +1,19 @@
+REQUIREMENTS:
+1.)Language
+2.)#login
+      *google/facebook
+   #sign up
+       *Firstname-lastname
+       *Email id
+       *Password
+       *Mobile no
+    #skip sign up
+3.)Select location
+4.)Movie suggestion
+    #Filters
+5.)Movie details
+6.)Theatre list
+7.)Seat management
+8.)Payment with login id
+9.)Payment access without login id (Special feature)
+10.)Payment details

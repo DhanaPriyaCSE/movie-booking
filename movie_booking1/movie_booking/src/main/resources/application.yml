@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:data-demo
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernet.dialect.H2Dialect
+      ddl-auto: update
+      use-new-id-generator-mapping: false
+  h2:
+    console:
+      enabled: true
+      path: /h2

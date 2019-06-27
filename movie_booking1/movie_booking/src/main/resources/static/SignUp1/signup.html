@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp Form</title>
+    
+    <linK rel= "stylesheet" type="text/css" href="/SignUp1/style.css">
+    
+</body>
+      <title> Film Hub </title>
+      <div class="signupbox">
+       <img src="/SignUp1/signup.png" class="signup">
+       <h1> SignUp Here</h1>
+       <form>
+           <p>Username</p>
+           <input type="text" name="" id="Name" placeholder="Enter Username" required>
+           <p>Mailid</p>
+           <input type="text" name="" id="Email" placeholder="Enter Mailid" * required>
+           <p>Mobile No</p>
+           <input type="text" name="" id="MobileNo" placeholder="Enter Mobile No" * required>
+           <p>Userid</p>
+           <input type="text" name="" id="UserId" placeholder="Enter Userid" * required>
+           <p>Password</p>
+           <input type="password" name="" id="Password" placeholder="Enter Password" *  required>
+           <button type="button" onclick="handleClick()" style="font-size: 18px; font-family:Georgia, 'Times New Roman', Times, serif; color: #fff; background-color: rgb(197, 22, 22) ">Submit</button>
+         </form>
+        </div>   
+      <script type="text/javascript">
+          function handleClick(){
+              console.log('hi dp');
+
+              const name=document.getElementById('Name').value;
+              const email=document.getElementById('Email').value;
+              const mobileno=document.getElementById('MobileNo').value;
+              const userid=document.getElementById('UserId').value;
+              const password=document.getElementById('Password').value;
+             
+        
+              const url = 'http://localhost:8080/api/user';
+
+              const data ={
+                  
+
+                
+                     'name':name,
+	                 'mailId':email,
+	                 'mobileno':mobileno,
+	                 'userId':userid,
+	                 'password':password
+
+              };
+
+              console.log('' + JSON.stringify(data));
+              fetch(url, {
+                  method: 'POST',
+                  headers:{
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(data),
+              })
+              .then(response => response.json())
+                   .then(data => console.log(JSON.stringify(data)))
+                   .catch(error => console.error(error));
+          }
+
+      </script> 
+
+</body>
+</head>
+</html>

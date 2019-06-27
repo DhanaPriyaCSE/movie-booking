@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url(/Landing1/img-3.jpg);
+    background-color: maroon;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: #7c7676; 
+}
+.navbar{
+    font-family: sans-serif;
+    position: absolute;
+    font-size:16px;
+    margin: 0;
+    padding: 0;
+    height:100px ;
+    width: 100%;
+    color: black;
+}
+
+.logo-img{
+    margin: none;
+    padding: none;
+   
+    width: 200px;
+    height:100px;
+    float: left;
+    margin-left: -10px;
+   }
+.block{
+   background-color:rgb(15, 25, 29);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left:100px;
+}
+.nav-link{
+    background-color:rgb(14, 14, 31);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+
+.text{
+    font-family: Georgia;
+    font-size: 40px;
+    color: wheat;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(233, 195, 73);
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: rgb(224, 13, 13);
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  top:-300px;
+  border: 2px solid rgb(233, 222, 64);
+  background: wheat;
+  
+  text-align: left;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  height: 36px;
+  position: absolute;
+  top: 22%;
+  left: 90%;
+  transform: translate(-90%, -50%);
+}
+
+.fa  i:hover{
+  color: rgba(15, 255, 15, 0.26);
+}
+
+/*cards*/
+
+body {
+  height:100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #050708;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.container-fluid{
+  display:grid;
+  position: relative;
+  padding-bottom: 10px;
+}

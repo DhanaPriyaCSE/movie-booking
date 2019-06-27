@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <title>Flim Hub</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <title> Flim Hub</title>
+  <link rel="stylesheet" type="text/css" href="/Landing1/style.css">
+  <link href="/Landing1/d.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+</head>
+
+<body >
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+  <!-- navbar start-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light-silver ">
+    <img src="/Landing1/logo.png" alt="some text" height="70" style=" padding-left: 25px">
+    <div class="container">
+      <div>
+        <h2 class="text"
+          style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px; padding-left:-15px"> Let's Grab
+          ur Seats!!!</h2>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="navbar-nav ml-auto">
+         <a ></a>
+        &nbsp; <a class="nav-link" href="/Landing1/fliphome.html"
+          style="font-size: 20px; color:#fff;background-image:linear-gradient(45deg, rgba(15, 15, 15, 0.349), rgb(167, 7, 7)) ; padding: 10px; padding-left: 25px;">Logout</a>
+       
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end-->
+
+  <!-- search-->
+  <div class="wrap" style="margin: 30px">
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder=" Search location">
+      <button type="submit" class="searchButton" onclick="location.href='https://www.google.co.in/'"
+        style="color: rgb(11, 11, 12);padding-left: 3px;   background-image:linear-gradient(45deg, rgb(230, 41, 41) , rgb(240, 195, 62));">
+        Go
+      </button>
+    </div>
+  </div>
+
+
+  <!--dropdown starts-->
+
+  <div id="menu" style="margin-top: 120px">
+    <button class="booking"  onclick="location.href='/Seats1/newseats.html'"> Book Now!!! </button>
+    <ul>
+      <li><a href="#" onclick="getMovies()" id="firstmovie"> Movie</a>
+      <ul id="showmovie">
+
+      </ul>
+      
+      
+      </li>&nbsp;
+            <li><a href="#" onclick="getTheatres()" id="firstTheatre"> Theatre</a>
+            <ul id="showtheatre"> 
+
+            </ul>
+            </li>&nbsp;
+      <li><a href="#"> ShowDate &realpart;</a>
+        <ul>
+          <li><a href="#">27/06/19</a>
+            <ul>
+              <li> <a href="#"> FN</a></li>
+              <li> <a href="#"> AN</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="#">28/06/19</a>
+            <ul>
+              <li> <a href="#"> FN</a></li>
+              <li> <a href="#"> AN</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="#">29/06/19</a>
+            <ul>
+              <li> <a href="#"> FN</a></li>
+              <li> <a href="#"> AN</a></li>
+             
+            </ul>
+
+          </li>
+          <li><a href="#">30/06/19</a>
+            <ul>
+              <li> <a href="#"> FN</a></li>
+              <li> <a href="#"> AN</a></li>
+             
+            </ul>
+          </li>
+        </ul>
+      </li>&nbsp;
+      <!--<li><a href="#">Show Time</a></li>-->
+
+    </ul>
+  </div>
+
+
+
+  <!--dropdown end-->
+
+
+  <!--grid start-->
+  <div class="container-fluid" style="margin-top: 150px;">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="theri2.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>THERI</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="Thadam1.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>THADAM</h1>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="kana1.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>KANAA</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="mozhi.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>MOZHI</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="kaththi2.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>KATHTHI</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="kgf.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>KGF</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="lkg.jpg" alt="Film HUb" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>LKG</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top:-40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="ngk.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+
+              <h1>NGK</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="ratchasan.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>RATCHASAN</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="petta.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>PETTA</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="mersal.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>MERSAL</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="flip-card" style="margin-top: -40px;">
+          <div class="flip-card-inner" style="width:200px;height:200px; ">
+            <div class="flip-card-front">
+              <img src="kanchana.jpg" alt="Film Hub" style="width:200px;height:200px; ">
+            </div>
+            <div class="flip-card-back" style="width:200px;height:200px; ">
+              <h1>KANCHANA-3</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //movie list start
+    function setFirst(name) {
+      console.log(name);
+      const element = document.getElementById("firstmovie");
+      console.log(element);
+      element.innerHTML = name;
+    }
+    function getMovies() {
+      fetch('http://localhost:8080/api/movies')
+      .then(res => res.json())
+      .then(movies => {
+        movies.map(p=>{
+       //   alert(p.movieName);
+          document.getElementById('showmovie').innerHTML+=`
+          
+          <li onclick="setFirst('${p.movieName}')"><a href="#">${p.movieName}</a></li>
+          
+          `;
+        });
+        
+        console.log(movies);
+      })
+
+      .catch(err => console.error(err));
+    }
+   // movie list end
+
+   // theatre list start
+    function settheatre(name) {
+      console.log(name);
+      const element = document.getElementById("firstTheatre");
+      console.log(element);
+      element.innerHTML = name;
+    }
+    function getTheatres() {
+      fetch('http://localhost:8080/api/theatres')
+      .then(res => res.json())
+      .then(movies => {
+        movies.map(u=>{
+       //   alert(p.theatreName);
+          document.getElementById('showtheatre').innerHTML+=`
+          
+          <li onclick="settheatre('${u.theatreName}')"><a href="#">${u.theatreName}</a></li>
+          
+          `;
+        });
+        
+        console.log(movies);
+      })
+
+      .catch(err => console.error(err));
+    }
+
+    // theatre list end
+  </script>
+
+</body>
+
+</html>
+5

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <linK rel="stylesheet" type="text/css" href="/LoginPage1/style.css">
+
+    </body>
+
+
+
+    <div class="loginbox">
+        <img src="/LoginPage1/login.png" class="login" style="background-size: cover">
+        <h1> Login Here</h1>
+        <!-- <form> -->
+            <p>Username</p>
+            <input type="text" name="" id="mailid" placeholder="Enter Username"> <br></br>
+            <p>Password</p>
+            <input type="password" id="password" name="" placeholder="Enter Password">
+            <button type="submit" onclick="handleClick()" name="">Login</button>
+            <a href="#" style="font-size: 16px"> Forget password?</a><br>
+            </br>
+            <a  onclick="location.href='/SignUp1/signup.html';" style="font-size: 16px">Don't have an account?</a>
+        <!-- </form> -->
+    </div>
+
+    <script type="text/javascript">
+        function postData(url = '', data = {}) {
+            console.log('we are here');
+            return fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => response.json());
+        }
+
+        function handleClick() {
+            console.log('Hi');
+            const mailid = document.getElementById('mailid').value;
+            const password = document.getElementById('password').value;
+
+            const Data = {
+                url: 'http://localhost:8080/api/users/login',
+                data: {
+
+                    'mailid': mailid,
+                    'pswd': password
+                }
+            };
+            postData(Data.url, Data.data)
+                .then(data => {
+                    console.log(data);
+                    if ((JSON.stringify(data)) == "true") {
+                        window.location = "/Landing1/home1.html";
+                    }
+                    else {
+                        alert("Invalid Credentials")
+                    }
+                })
+                .catch(error => console.error(error));
+        }
+    </script>
+
+
+    </body>
+</head>
+
+</html>
